@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="testSuite">
+    <parameter name="browser" value="chrome"/>
+    <test name="firstTest">
+        <classes>
+            <class name="test.java.Test1"/>
+            <class name="test.java.Test2"/>
+            <class name="test.java.Test5"/>
+            <class name="test.java.DP_Test"/>
+            <!--For all test-->
+        </classes>
+    </test>
+</suite>

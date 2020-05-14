@@ -1,16 +1,24 @@
 package main.java.testng_tasks;
 
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Task5 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите любое слово или фразу: ");
-        String phrase = scanner.nextLine();
 
-        char[] try1 = phrase.toCharArray();
+        reversePhrase();
+    }
 
-        for (int i = try1.length - 1; i >= 0; i--)
-            System.out.print(try1[i]);
+    public static String reversePhrase() {
+
+        String input = "Geeks for Geeks";
+
+        StringBuilder input1 = new StringBuilder();
+        input1.append(input);
+        input1 = input1.reverse();
+
+
+        System.out.println(input1);
+        return input1.toString();
+
     }
 }

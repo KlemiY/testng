@@ -3,38 +3,18 @@ package test.java;
 import main.java.testng_tasks.Task2;
 import org.testng.annotations.*;
 
+import java.util.ArrayList;
+
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
 public class Test2 {
     Task2 task2;
 
-    @AfterClass
-    public void tearDown() {
-        System.out.println("I am After Class - Hook");
-    }
-
-    @BeforeClass
-    public void setUp() {
-        System.out.println("I am Before Class - Hook");
-    }
-
     @BeforeMethod
     public void initialize() {
         task2 = new Task2();
         System.out.println("Before Method - Hook");
-    }
-
-    @Test
-    public void amountOfLines() {
-        String[] amountOfLines = task2.printName().split("\n");
-        int actualAmountOfLines = amountOfLines.length;
-        int expectedAmountOfLines = 5;
-        assertEquals(
-                actualAmountOfLines,
-                expectedAmountOfLines,
-                "Expected amount of lines: " + expectedAmountOfLines + ", but got " + actualAmountOfLines
-        );
     }
 
     @Test
@@ -51,14 +31,26 @@ public class Test2 {
     }
 
     @Test
-    public void amountOfNamesInOneLine() {
-        String amountOfNames = task2.printName();
-
+    public void linesAmount() {
+        String properLinesAmount = task2.printName();
+        int actualLineAmount = properLinesAmount.split("\n").length;
+        int expectedLineAmount = 5;
+        assertEquals(
+                actualLineAmount,
+                expectedLineAmount,
+                "Expected amount of line: " + expectedLineAmount + ", but got " + actualLineAmount
+        );
     }
 
-    @AfterMethod
-    public void afterMethod() {
-        System.out.println("After Method - Hook");
+    @Test
+    public void spacesAmount() { //Total amount
+        String totalSpacesAmount = task2.printName();
+        int actualSpacesAmount = totalSpacesAmount.split("\\s+").length;
+        int expectedSpacesAmount = 50;
+        assertEquals(
+                actualSpacesAmount,
+                expectedSpacesAmount,
+                "Expected amount of names in one row: " + expectedSpacesAmount + ", but got " + actualSpacesAmount + "."
+        );
     }
-
 }

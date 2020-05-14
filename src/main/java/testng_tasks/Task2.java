@@ -1,7 +1,11 @@
 package main.java.testng_tasks;
 
 public class Task2 {
-    public static void main(String[] args) {
+    public static void main() {
+
+    }
+
+    public String printName() {
 
         String n = "Oleg";
 
@@ -11,5 +15,7 @@ public class Task2 {
             }
             System.out.println();
         }
+        return n;
     }
 }
+

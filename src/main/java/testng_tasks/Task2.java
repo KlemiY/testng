@@ -13,13 +13,26 @@ public class Task2 {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 10; j++) {
                 n = n + a + " ";
-                //System.out.print(a + " ");
+                System.out.print(a + " ");
             }
             n = n + "\n";
-            //System.out.println();
+            System.out.println();
         }
         System.out.println(n);
         return n;
     }
 }
+/*public class Task2 {
+    public static void main(String[] args) {
 
+        String n = "Marina<3";
+
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.print(n + " ");
+            }
+            System.out.println();
+        }
+        return n;
+    }
+}*/

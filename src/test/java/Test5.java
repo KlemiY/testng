@@ -2,6 +2,7 @@ package test.java;
 
 import main.java.testng_tasks.Task5;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -18,7 +19,7 @@ public class Test5 {
 
     @Parameters({"browser"})
     @Test
-    public void Task5(String browser) {
+    public void Task5(/*@Optional("firefox")*/ String browser) {
         String actualReverseSentence = Task5.reversePhrase();
         String expectedReverseSentence = "skeeG rof skeeG";
         assertEquals(

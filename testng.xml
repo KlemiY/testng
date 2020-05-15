@@ -3,9 +3,9 @@
     <parameter name="browser" value="chrome"/>
     <test name="firstTest">
         <classes>
-            <class name="test.java.Test1"/>
-            <class name="test.java.Test2"/>
-            <!--ONLY 5 TEST SUPPOSE TO BE TESTED-->
+            <class name="test.java.DP_Test"/>
+            <class name="test.java.Test5"/>
+            <!--ONLY 8 TESTS SUPPOSE TO BE TESTED-->
         </classes>
     </test>
 </suite>

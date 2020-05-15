@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <suiteXmlFile>alltest.xml</suiteXmlFile>
+        <suiteXmlFile>testng.xml</suiteXmlFile>
     </properties>
 
     <build>

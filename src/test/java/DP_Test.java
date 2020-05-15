@@ -25,6 +25,7 @@ public class DP_Test {
                 expectedMin,
                 "Expected min is " + expectedMin + ", but got " + actualMin + "."
         );
+        System.out.println(actualMin);
     }
 
     @DataProvider(name = "randomNumbers")

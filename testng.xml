@@ -4,7 +4,7 @@
     <test name="firstTest">
         <classes>
             <class name="test.java.Test5"/>
-            <!--ONLY 7 TESTS SUPPOSE TO BE TESTED-->
+            <!--ONLY 1 TEST SUPPOSE TO BE TESTED ON CHROME-->
         </classes>
     </test>
 </suite>

@@ -2,6 +2,7 @@ package test.java;
 
 import main.java.testng_tasks.Task5;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
@@ -15,8 +16,9 @@ public class Test5 {
         System.out.println("Before Method - Hook");
     }
 
+    @Parameters({"browser"})
     @Test
-    public void Task5() {
+    public void Task5(String browser) {
         String actualReverseSentence = Task5.reversePhrase();
         String expectedReverseSentence = "skeeG rof skeeG";
         assertEquals(
@@ -24,5 +26,6 @@ public class Test5 {
                 expectedReverseSentence,
                 "Expected result: " + expectedReverseSentence + ", but got " + actualReverseSentence + "."
         );
+        System.out.println("Tested in " + browser);
     }
 }

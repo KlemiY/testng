@@ -1,15 +1,22 @@
+ ## Homework WebDriver
+ #### Task1 (Phone Number)
+ * Status - finished  (not reviewed).
+ * Date: 18.05.2020 (18:17).
+ #### Task2 - in progress
+ * Status - not finished. 
+ * Date: TBD.
  ## Homework TestNG
  #### Task1
-  * Status - finished  (not reviewed).
+  * Status - finished  (reviewed).
   * Date: 14.05.2020 (21:23).
  #### Task2
-  * Status - finished  (not reviewed).
+  * Status - finished  (reviewed).
   * Date: 14.05.2020 (21:23).
  #### Task5
-  * Status - finished  (not reviewed).
+  * Status - finished  (reviewed).
   * Date: 14.05.2020 (21:23).
  #### DP Tests + testng.xml file
-  * Status - finished  (not reviewed).
+  * Status - finished  (reviewed).
   * Date: 14.05.2020 (21:23).
    
  ## Homework_lesson2 (Lesson2)

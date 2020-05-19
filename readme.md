@@ -1,7 +1,11 @@
  ## Homework WebDriver
  #### Task1 (Phone Number)
- * Status - finished  (not reviewed).
+ * Status - finished  (reviewed).
  * Date: 18.05.2020 (18:17).
+ 
+ #### Task2 (WebDriver - Wait Intro)
+ * Status - finished  (not reviewed).
+ * Date: 19.05.2020 (13:30).
  
  #### Task2 - in progress
  * Status - not finished. 

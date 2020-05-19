@@ -7,10 +7,6 @@
  * Status - finished  (not reviewed).
  * Date: 19.05.2020 (13:30).
  
- #### Task2 - in progress
- * Status - not finished. 
- * Date: TBD.
- 
  ## Homework TestNG
  #### Task1
   * Status - finished  (reviewed).

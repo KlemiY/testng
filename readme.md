@@ -1,3 +1,8 @@
+ ## Homework PO & Collections
+ #### Task1
+ * Status - finished  (not reviewed).
+ * Date: 26.05.2020 (13:00).
+ 
  ## Homework WebDriver
  #### Task1 (Phone Number)
  * Status - finished  (reviewed).

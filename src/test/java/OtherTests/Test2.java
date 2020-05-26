@@ -1,4 +1,4 @@
-package test.java;
+package test.java.OtherTests;
 
 import main.java.testng_tasks.Task2;
 import org.testng.annotations.*;

@@ -7,8 +7,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.List;
-
 public class LandPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
@@ -35,10 +33,4 @@ public class LandPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(productType));
         return this;
         }
-
-    public LandPage getAmountOfProductTypes() {
-        List<WebElement> productLinks = driver.findElements(productType);
-        return this;
-
-    }
 }

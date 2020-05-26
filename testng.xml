@@ -4,7 +4,7 @@
     <parameter name="browser" value="firefox"/>
     <test name="firstTest">
         <classes>
-            <class name="test.java.Test5"/>
+            <class name="test.java.OtherTests.Test5"/>
             <!--ONLY 1 TEST SUPPOSE TO BE TESTED ON CHROME-->
         </classes>
     </test>

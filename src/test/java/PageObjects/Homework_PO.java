@@ -21,7 +21,6 @@ public class Homework_PO extends TestingSetup {
     public void appleProductsSearch() {
         landPage.open();
         landPage.search("Apple");
-        landPage.getAmountOfProductTypes();
         //Checking correct amount of products type.
         List<WebElement> productLinks = driver.findElements(landPage.productType);
         for (WebElement element : productLinks) {
@@ -36,7 +35,6 @@ public class Homework_PO extends TestingSetup {
     public void samsungProductsSearch() {
         landPage.open();
         landPage.search("Samsung");
-        landPage.getAmountOfProductTypes();
         //Checking correct amount of products type.
         List<WebElement> productLinks = driver.findElements(landPage.productType);
         for (WebElement element : productLinks) {
@@ -46,5 +44,4 @@ public class Homework_PO extends TestingSetup {
                     "Expected amount is " + expectedAmount + ", but got " + actualAmount + ".");
         }
     }
-
 }

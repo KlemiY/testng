@@ -11,8 +11,8 @@ public class LandPage {
     private final WebDriver driver;
     private final WebDriverWait wait;
     private String searchStr;
-    private By search = By.cssSelector("[name='search']");
-    private By productType = By.cssSelector("[class='m-cat-l-i-title-link novisited']");
+    By search = By.cssSelector("[name='search']");
+    By productType = By.cssSelector("[class='m-cat-l-i-title-link novisited']");
 
     public LandPage(WebDriver driver) {
         this.driver = driver;

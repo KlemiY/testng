@@ -151,9 +151,9 @@ public class Homework_PO extends TestingSetup {
         };
         assertEquals(expectedProducer, actualProducer);*/
 
-        WebElement oneItem = driver.findElement(By.xpath("//li/a//*[contains(text(),'Acer')]"));
+        /*WebElement oneItem = driver.findElement(By.xpath("//li/a//*[contains(text(),'Acer')]"));
         String text1 = oneItem.getText();
-        System.out.println("Text =" + text1);
+        System.out.println("Text =" + text1);*/
     }
     /*@DataProvider(name = "laptopModels")
     public Object[][] getData() {

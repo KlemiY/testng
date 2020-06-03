@@ -18,7 +18,7 @@ public class LaptopsPage {
     private final WebDriverWait wait;
     Logger logger = LogManager.getLogger(LandPage.class);
 
-    @FindBy(xpath = "//li/a//*[contains(text(), + 'Acer')]")
+    @FindBy(xpath = "//li/a//*[contains(text(),'Acer')]")
     private WebElement checkBox;
     @FindBy(css = "[class='goods-tile__title']")
     public List<WebElement> laptopItems;

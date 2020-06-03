@@ -56,8 +56,8 @@ public class Homework_PO extends TestingSetup {
         }
     }
 
-    @Test(dataProvider = "laptopModels")
-    public void laptopSearch(String checkboxName) {
+    @Test//(dataProvider = "laptopModels")
+    public void laptopSearch() {
         laptopsPage.open();
         laptopsPage.selectProductCheckbox();
         List<WebElement> allItems = laptopsPage.laptopItems;
@@ -86,8 +86,8 @@ public class Homework_PO extends TestingSetup {
             i++;
             System.out.println(element.getText());
         }
-        String expectedProducer = "^Ноутбук Acer.*";
-        String[] actualProducer = new String[] {
+        /*String expectedProducer = "^Ноутбук Acer.*";
+        Object[] actualProducer = new String[] {
                 "Ноутбук Acer Swift 3 SF314-58-52DU (NX.HPMEU.00L) Sparkly Silver Суперцена!!!",
                 "Ноутбук Acer Aspire 3 A315-34-C1SZ (NX.HE3EU.016) Black Суперцена!!!",
                 "Ноутбук Acer Swift 3 SF314-41-R1EL (NX.HFDEU.006) Sparkly Silver Суперцена!!!",
@@ -149,20 +149,20 @@ public class Homework_PO extends TestingSetup {
                 "Ноутбук Acer Aspire 3 A315-56-54SE (NX.HS6EU.00C) Indigo Blue",
                 "Ноутбук Acer Aspire 5 A515-54G-57RF (NX.HVGEU.008) Pure Silver"
         };
-        assertEquals(expectedProducer, actualProducer);
+        assertEquals(expectedProducer, actualProducer);*/
 
         WebElement oneItem = driver.findElement(By.xpath("//li/a//*[contains(text(),'Acer')]"));
         String text1 = oneItem.getText();
         System.out.println("Text =" + text1);
     }
-    @DataProvider(name = "laptopModels")
+    /*@DataProvider(name = "laptopModels")
     public Object[][] getData() {
         return new Object[][] {
                 {"//li/a//*[contains(text(),'Acer')]"},
                 {"//li/a//*[contains(text(),'Apple')]"},
                 {"//li/a//*[contains(text(),'Asus')]"}
         };
-    }
+    }*/
 
 }
 

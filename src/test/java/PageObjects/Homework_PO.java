@@ -49,8 +49,8 @@ public class Homework_PO extends TestingSetup {
         }
     }
 
-    @Test//(dataProvider = "laptopModels")
-    public void laptopSearch() {
+    @Test(dataProvider = "laptopModels")
+    public void laptopSearch(String producer) {
         laptopsPage.open();
         laptopsPage.selectProductCheckbox();
         List<WebElement> allItems = laptopsPage.laptopItems;
@@ -148,14 +148,14 @@ public class Homework_PO extends TestingSetup {
         String text1 = oneItem.getText();
         System.out.println("Text =" + text1);*/
     }
-    /*@DataProvider(name = "laptopModels")
-    public Object[][] getData() {
+    @DataProvider(name = "laptopModels")
+    public Object[][] getCssSelector() {
         return new Object[][] {
                 {"//li/a//*[contains(text(),'Acer')]"},
                 {"//li/a//*[contains(text(),'Apple')]"},
                 {"//li/a//*[contains(text(),'Asus')]"}
         };
-    }*/
+    }
 
 }
 

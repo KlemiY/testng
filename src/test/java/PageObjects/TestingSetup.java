@@ -19,10 +19,11 @@ import java.security.cert.PKIXRevocationChecker;
 
 public class TestingSetup {
     WebDriver driver;
+    Screenshot screenshot;
 
     @BeforeMethod
-    @Parameters({"browser"})
-    public void beforeMethod(/*ITestContext context*/){
+    //@Parameters({"browser"})
+    public void beforeMethod(){
         System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 
                 /*ChromeOptions optionCh = new ChromeOptions();
@@ -36,18 +37,20 @@ public class TestingSetup {
         optionFF.addArguments("--incognito");*/
 
         driver = new ChromeDriver();
-        /*context.setAttribute("driver", driver);
-        try {
+        //context.setAttribute("driver", driver);
+       /*try {
             driver = new RemoteWebDriver(
                     new URL("http://ec2-18-157-73-62.eu-central-1.compute.amazonaws.com:4444/wd/hub"), optionCh);
                     //new URL("http://ec2-18-156-197-65.eu-central-1.compute.amazonaws.com:4444/wd/hub"), optionsCh)
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }*/
+        screenshot = new Screenshot(driver);
     }
 
     @AfterMethod
     public void afterMethod(ITestResult result) {
+        screenshot.getScreenshot(result);
         driver.quit();
     }
 }

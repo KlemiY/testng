@@ -48,9 +48,9 @@ public class TestFirst extends TestingSetup {
         }*/
      }
 
-//    @Test
-//    public void testB() {
-//        landPage.open();
-//        fail();
-//    }
+    @Test
+    public void testC() {
+        landPage.open();
+        fail();
+    }
 }

@@ -1,0 +1,22 @@
+//To run test:
+mvn clean -Dtest=FirstTest test
+mvn clean -Dtest=FirstTest#successLogin test
+mvn clean -Dtest=FirstTest#successLogin+successLogin3 test
+mvn clean -Dtest=FirstTest#success* test
+
+//don't remember what for... :(
+#new_head > div.b-new-index-icons.container > div > div:nth-child(2) > a > h3 > span
+[class='item_napr'] h3 span
+
+//Local, for PowerShell
+java -jar .\selenium-server-standalone-3.141.59.jar -role hub
+java -jar .\selenium-server-standalone-3.141.59.jar -role node -nodeConfig .\nodeConfig.json
+
+// For putty console
+sudo apt update
+sudo apt install docker
+sudo apt install docker.io -y
+sudo apt install docker-compose -y
+touch seleniumGrid.yml
+sudo nano seleniumGrid.yml
+cat seleniumGrid.yml

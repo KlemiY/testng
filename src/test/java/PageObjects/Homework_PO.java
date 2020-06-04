@@ -49,21 +49,20 @@ public class Homework_PO extends TestingSetup {
         }
     }
 
-    @Test(dataProvider = "laptopModels")
-    public void laptopSearch(String producer) {
+    @Test//(dataProvider = "laptopModels")
+    public void laptopSearch() {
         laptopsPage.open();
         laptopsPage.selectProductCheckbox();
         List<WebElement> allItems = laptopsPage.laptopItems;
-        //Проверка на кол-во продуктов.
-        /*for (WebElement element : allItems) {
-            int expectedAmount = 60;
-            int actualAmount = allItems.size();
-            assertEquals(expectedAmount, actualAmount,
-                    "Expected amount is " + expectedAmount + ", but got " + actualAmount + "."
-            );
-        }*/
-        System.out.println(allItems);
+        String [] itemsText = new String[allItems.size()];
+        int i=0;
+        //Storing List elements text into String array
+        for(WebElement element: allItems) {
+            itemsText[i]=element.getText();
+            i++;
+            System.out.println(element.getText());
         }
+    }
 
 
     @Test //Для проверки на возвращение тектса.

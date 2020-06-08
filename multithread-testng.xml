@@ -1,15 +1,15 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="First_suite" parallel="classes" thread-count="2">
-<!--    <listeners>-->
-<!--        &lt;!&ndash;<listener class-name="test.java.utils.Listener"/>-->
-<!--        <listener class-name="test.java.utils.AnnotationTransformer"/>&ndash;&gt;-->
-<!--    </listeners>-->
-<!--    <parameter name="browser" value="Chrome"/>-->
-    <parameter name="browser" value="Firefox"/>
+    <listeners>
+        <listener class-name="test.java.utils.Listener"/>
+        <listener class-name="test.java.utils.AnnotationTransformer"/>
+    </listeners>
+    <parameter name="browser" value="Chrome"/>
     <test name="First_test">
         <classes>
-            <class name="test.java.PageObjects.TestFirst"/>
-            <class name="test.java.PageObjects.TestSecond"/>
+            <class name="test.java.PageObjects.Listener_Check"/>
+<!--            <class name="test.java.PageObjects.TestFirst"/>-->
+<!--            <class name="test.java.PageObjects.TestSecond"/>-->
             <!--<class name="test.java.PageObjects.TestThird"/>-->
         </classes>
     </test>

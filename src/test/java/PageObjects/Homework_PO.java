@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.fail;
 
 public class Homework_PO extends TestingSetup {
     LandPage landPage;
@@ -46,6 +47,12 @@ public class Homework_PO extends TestingSetup {
                     "Expected amount is " + expectedAmount + ", but got " + actualAmount + "."
             );
         }
+    }
+
+    @Test()
+    public void testB() {
+        landPage.open();
+        fail();
     }
 
 }

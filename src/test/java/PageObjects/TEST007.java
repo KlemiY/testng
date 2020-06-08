@@ -45,8 +45,6 @@ public class TEST007 {
         я руками посчитал, сколько плиток с товарами на странице, их там 59 не понятно откуда лезет еще 1,
         но вроде работает всё нормально.*/
 
-
-        //Не уверен насколько коректно работает цикл.
         List<WebElement> allItems = driver.findElements(By.cssSelector("[class='goods-tile__title']"));
         String [] itemsText = new String[allItems.size()];
         int i=0;

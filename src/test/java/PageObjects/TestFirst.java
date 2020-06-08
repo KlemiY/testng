@@ -21,8 +21,8 @@ public class TestFirst extends TestingSetup {
     @Test
     public void testA() {
         landPage.open();
-        /*landPage.search("Apple");
-        //Checking correct amount of products type.
+        //landPage.search("Apple");
+        /*//Checking correct amount of products type.
         List<WebElement> productLinks = landPage.productType;
         for (WebElement element : productLinks) {
             int expectedAmount = 5;
@@ -36,8 +36,8 @@ public class TestFirst extends TestingSetup {
     @Test
     public void testB() {
         landPage.open();
-        /*landPage.search("Samsung");
-        //Checking correct amount of products type.
+        //landPage.search("Samsung");
+        /*//Checking correct amount of products type.
         List<WebElement> productLinks = landPage.productType;
         for (WebElement element : productLinks) {
             int expectedAmount = 9;
@@ -51,6 +51,59 @@ public class TestFirst extends TestingSetup {
     @Test
     public void testC() {
         landPage.open();
-        fail();
+        //landPage.search("Apple");
+        /*//Checking correct amount of products type.
+        List<WebElement> productLinks = landPage.productType;
+        for (WebElement element : productLinks) {
+            int expectedAmount = 5;
+            int actualAmount = productLinks.size();
+            assertEquals(expectedAmount, actualAmount,
+                    "Expected amount is " + expectedAmount + ", but got " + actualAmount + "."
+            );
+        }*/
+    }
+
+    @Test
+    public void testD() {
+        landPage.open();
+        //landPage.search("Samsung");
+        /*//Checking correct amount of products type.
+        List<WebElement> productLinks = landPage.productType;
+        for (WebElement element : productLinks) {
+            int expectedAmount = 9;
+            int actualAmount = productLinks.size();
+            assertEquals(expectedAmount, actualAmount,
+                    "Expected amount is " + expectedAmount + ", but got " + actualAmount + "."
+            );
+        }*/
+    }
+    @Test
+    public void testE() {
+        landPage.open();
+        //landPage.search("Apple");
+        /*//Checking correct amount of products type.
+        List<WebElement> productLinks = landPage.productType;
+        for (WebElement element : productLinks) {
+            int expectedAmount = 5;
+            int actualAmount = productLinks.size();
+            assertEquals(expectedAmount, actualAmount,
+                    "Expected amount is " + expectedAmount + ", but got " + actualAmount + "."
+            );
+        }*/
+    }
+
+    @Test
+    public void testF() {
+        landPage.open();
+        //landPage.search("Samsung");
+        /*//Checking correct amount of products type.
+        List<WebElement> productLinks = landPage.productType;
+        for (WebElement element : productLinks) {
+            int expectedAmount = 9;
+            int actualAmount = productLinks.size();
+            assertEquals(expectedAmount, actualAmount,
+                    "Expected amount is " + expectedAmount + ", but got " + actualAmount + "."
+            );
+        }*/
     }
 }

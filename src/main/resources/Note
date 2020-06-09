@@ -20,3 +20,11 @@ sudo apt install docker-compose -y
 touch seleniumGrid.yml
 sudo nano seleniumGrid.yml
 cat seleniumGrid.yml
+
+-----ALLURE --------------
+allure serve allure-results
+allure generate allure-results -c -o allure-report
+
+-----JENKINS--------------
+sudo apt install maven -y
+https://gist.github.com/brunoleles/5a92a0fa93a3651ce0279e5f96a28f3a

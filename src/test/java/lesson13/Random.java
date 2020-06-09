@@ -1,0 +1,21 @@
+package test.java.lesson13;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class Random {
+    public static void main(String[] args) {
+        Set<Integer> set = new HashSet<>();
+        //List<WebElements> el = driver.findElementsBy();
+        //int max = el.size();
+        //el.get(rand);
+        int max = 10;
+        int min = 5;
+        for (int i = 0; i < 10000000; i++) {
+            int rand = (int) (Math.random() * (max + 1 - min) + min);
+            set.add(rand);
+            //System.out.println(rand); //10 это длинна коллекции или же любое необходимое число
+        }
+        for (Integer el: set) System.out.println(el);
+    }
+}

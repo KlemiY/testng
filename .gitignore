@@ -3,3 +3,7 @@
 .target/
 *.exe
 .logs/
+screenshots/
+allure-results/!categories.json
+allure-results/
+allure-report/

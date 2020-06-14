@@ -17,8 +17,7 @@ import java.util.List;
 
 import static org.testng.Assert.assertEquals;
 
-
-public class TEST007 {
+public class Allure_Homework {
     private WebDriver driver;
     private WebDriverWait wait;
 

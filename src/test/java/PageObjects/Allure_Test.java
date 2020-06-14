@@ -2,8 +2,11 @@ package test.java.PageObjects;
 
 import io.qameta.allure.*;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 import static org.testng.Assert.*;
 
@@ -11,10 +14,12 @@ import static org.testng.Assert.*;
 @Epic("Card")
 public class Allure_Test extends TestingSetup{
         LandPage landPage;
+        LaptopsPage laptopsPage;
 
         @BeforeMethod
         public void initialize() {
             landPage = new LandPage(driver);
+            laptopsPage = new LaptopsPage(driver);
         }
 
         @Feature("Add to the card")
@@ -66,7 +71,8 @@ public class Allure_Test extends TestingSetup{
             if(true) throw new Error("Custom error");
             landPage.search("Apple");
             assertTrue(false);
-    }
+        }
+
 }
 
 

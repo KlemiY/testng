@@ -11,7 +11,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.DataProvider;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class LaptopsPage {
     private final WebDriver driver;
